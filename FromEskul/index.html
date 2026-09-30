@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Ekskul</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form>
+        <p>
+            Form Pendaftaran Eskul <br>
+            SMK LETRIS INDONESIA 2
+        </p>
+
+        <!-- NAMA SISWA -->
+        <label for="Nama">Nama Lengkap:</label>
+        <input type="text" placeholder="Masukan nama siswa" id="Nama">
+
+        <!-- KELAS SISWA -->
+        <label for="kelasx">Kelas:</label>
+        <div class="kelas">
+            <input type="radio" id="kelasx" name="kelas" value="X">
+            <label for="kelasx">X</label>
+            <input type="radio" id="kelasxi" name="kelas" value="XI">
+            <label for="kelasxi">XI</label>
+            <input type="radio" id="kelasxii" name="kelas" value="XII">
+            <label for="kelasxii">XII</label>
+        </div>
+
+        <!-- JURUSAN -->
+        <label for="Jurusan">Jurusan:</label>
+        <select name="jurusan" id="Jurusan">
+            <option value="" disabled selected hidden>
+                -- Pilih Jurusan --
+            </option>
+            <option value="PPLG">PPLG</option>
+            <option value="DKV">DKV</option>
+            <option value="TJKT">TJKT</option>
+            <option value="AKL">AKL</option>
+            <option value="BDP">BDP</option>
+            <option value="MPLB">MPLB</option>
+        </select>
+
+        <!-- ESKUL -->
+        <label for="Eskul">Pilihan Ekskul:</label>
+
+        <select name="eskul" id="Eskul">
+            <option value="" disabled selected hidden>
+                -- Pilih Ekstrakurikuler --
+            </option>
+            <option value="Animasi">Animasi</option>
+            <option value="Paskibra">Paskibra</option>
+            <option value="Volly">Volly</option>
+            <option value="Basket">Basket</option>
+            <option value="Futsal">Futsal</option>
+            <option value="Letsin">Letsin</option>
+            <option value="PMR">PMR</option>
+            <option value="Dance Modern">Dance Modern</option>
+        </select>
+
+        <div class="buttoninput">
+            <button type="button" onclick="InputData()">
+                Tambah Data
+            </button>
+        </div>
+
+        <div id="tabelData"></div>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
